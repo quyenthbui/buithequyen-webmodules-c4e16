@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>BMI Calculator</h1>
+    <p> {{ bmi }}
+    <i> {% if bmi < 16 %}
+          {{ 'Severely underweight' }}
+        {% elif 16 <= bmi < 18.5 %}
+          {{ 'Underweight' }}
+        {% elif 18.5 <= bmi < 25 %}
+          {{ 'Normal' }}
+        {% elif 25 <= bmi < 30 %}
+          {{ 'Overweight' }}
+        {% elif bmi > 30 %}
+          {{ 'Obese' }}
+        {% endif %}
+    </i>
+  </p>
+
+  </body>
+</html>
